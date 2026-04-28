@@ -218,7 +218,7 @@ export default function TopRacer() {
         car.driftAngle *= 0.9;
       }
 
-      // Movement
+      // 移動ment
       const moveAngle = car.angle + car.driftAngle * 0.3;
       car.x += Math.cos(moveAngle) * car.speed * dt;
       car.y += Math.sin(moveAngle) * car.speed * dt;
@@ -425,7 +425,7 @@ export default function TopRacer() {
             color: "#fff", fontSize: 18, fontWeight: 700, cursor: "pointer",
           }}>
             {c.name}
-            {bestTimes[i] !== null && <span style={{ display: "block", fontSize: 12, opacity: 0.6 }}>Best: {bestTimes[i]}s</span>}
+            {bestTimes[i] !== null && <span style={{ display: "block", fontSize: 12, opacity: 0.6 }}>ベスト: {bestTimes[i]}s</span>}
           </button>
         ))}
       </div>
@@ -450,12 +450,12 @@ export default function TopRacer() {
             padding: "10px 24px", borderRadius: 10, border: "none",
             background: "linear-gradient(135deg, #4ECDC4, #44a89d)", color: "#fff",
             fontWeight: 700, cursor: "pointer",
-          }}>Retry</button>
+          }}>リトライ</button>
           <button onClick={() => setScreen("menu")} style={{
             padding: "10px 24px", borderRadius: 10, border: "none",
             background: "rgba(255,255,255,0.1)", color: "#fff",
             fontWeight: 700, cursor: "pointer",
-          }}>Menu</button>
+          }}>メニュー</button>
         </div>
       </div>
     );
